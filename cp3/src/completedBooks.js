@@ -1,13 +1,10 @@
-let books = [
-    9780552152167,
-    9781982115876,
-    9780310120810,
-    9781250107817,
-    9781760785857,
-    9781439157039,
-    9781565126732,
-    1580056776,
-    9780812994520,
-    9781501144318,
-    9781458798435,
-]
+let completedBooks = [{"title":"Zontrax","author":"Slyne","description":"ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at","image":"http://dummyimage.com/180x100.png/cc0000/ffffff"},
+{"title":"Solarbreeze","author":"Boig","description":"molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula","image":"http://dummyimage.com/136x100.png/cc0000/ffffff"},
+{"title":"Pannier","author":"Misk","description":"porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus","image":"http://dummyimage.com/177x100.png/5fa2dd/ffffff"},
+{"title":"Fixflex","author":"MacKnight","description":"elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue eget","image":"http://dummyimage.com/101x100.png/ff4444/ffffff"},
+{"title":"Zoolab","author":"Utridge","description":"tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis","image":"http://dummyimage.com/186x100.png/cc0000/ffffff"},
+{"title":"Stronghold","author":"Roubay","description":"nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut","image":"http://dummyimage.com/110x100.png/5fa2dd/ffffff"},
+{"title":"Tampflex","author":"Eyres","description":"mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet","image":"http://dummyimage.com/189x100.png/ff4444/ffffff"},
+{"title":"Tres-Zap","author":"Reid","description":"magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum","image":"http://dummyimage.com/119x100.png/dddddd/000000"},
+{"title":"Tampflex","author":"McKinty","description":"velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum","image":"http://dummyimage.com/242x100.png/cc0000/ffffff"},
+{"title":"Vagram","author":"Yellowlee","description":"dolor sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien","image":"http://dummyimage.com/232x100.png/5fa2dd/ffffff"}];

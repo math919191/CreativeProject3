@@ -2,7 +2,7 @@
   <div>
     <h1>This is a completed page</h1>
     <p>Hello</p>
-    <BookList/>
+    <BookList :completedBooks="completedBooks"/>
   </div>
 </template>
 
@@ -12,8 +12,17 @@ export default {
     name: "Completed", 
     components: {
         BookList
-    }
+    },
+    computed: {
+      completedBooks() {
+        return this.$root.$data.completedBooks 
+      }
+    },
+    props: {
+      BookList: Array,
 } 
+}
+
 </script>
 
 
