@@ -48,6 +48,21 @@
   color: #2c3e50;
 }
 
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Courgette", cursive;
+    
+}
+body {
+  background-color: #7796cbff;
+}
+
+
 .bg-light {
     background-color: #E8DDB5!important;
   }

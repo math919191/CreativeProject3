@@ -12,14 +12,29 @@
           </div>
           
         </div>
-
-
-    <p>HOME PAGE</p>
   </div>
+  
 </template>
 
 
 <style scoped>
+
+img {
+    width: 100%;
+}
+.home-image {
+    width: 1000px;
+    max-height: 900px;
+    border: thick red;
+    color: white;
+    position: relative;
+  
+}
+.section-1 {
+    display: flex;
+    width: vw;
+    justify-content: center;
+}
 
 .home-heading {
     position: absolute;
@@ -29,20 +44,11 @@
     padding-left: 20px;
     margin-right: 50%;
     font-size: 50px;
-    color: white;
     /* top: 40%;
     left: 40%;
     font-size: 50px;
     transform: translate(-50%, -50%); */
   }
-.home-image {
-    width: 100%;
-    max-height: 900px;
-    border: thick red;
-    color: white;
-    position: relative;
-  
-}
 
 </style>
 
