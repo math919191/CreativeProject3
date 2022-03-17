@@ -1,9 +1,9 @@
 <template>
 
 <div class="books">
-    <div class="a" v-for="title in completedBooks" :key="title">
-        <p>hello</p>
-        <div class="book">
+    <div class="a" v-for="book in completedBooks" :key="book.id">
+        {{title}}
+        <!-- <div class="book">
             <div class="rec-book"></div>
             <div class="description">
             <h6>{{book.title}}</h6>
@@ -11,7 +11,7 @@
 
             <p>12/12/12</p>
             </div>
-        </div>    
+        </div>     -->
     </div>
 
 </div>
