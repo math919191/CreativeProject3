@@ -1,15 +1,16 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import completedBooks from './completedBooks.js'
+import mock from './completedBooks.js'
 
 Vue.config.productionTip = false
 
 let data = {
-  completedBooks: completedBooks
+  completedBooks: mock,
 }
 
 new Vue({
   router,
+  data,
   render: h => h(App)
 }).$mount('#app')

@@ -1,8 +1,9 @@
 <template>
   <div>
-    <h1>This is a completed page</h1>
-    <p>Hello</p>
-    <BookList :completedBooks="completedBooks"/>
+    <br>
+    <h1>Completed Books</h1>
+    <br>
+    <BookList />
   </div>
 </template>
 
@@ -13,14 +14,6 @@ export default {
     components: {
         BookList
     },
-    computed: {
-      completedBooks() {
-        return this.$root.$data.completedBooks 
-      }
-    },
-    props: {
-      BookList: Array,
-} 
 }
 
 </script>

@@ -1,19 +1,20 @@
 <template>
 
-<div class="books">
-    <div class="a" v-for="book in completedBooks" :key="book.id">
-        {{title}}
-        <!-- <div class="book">
-            <div class="rec-book"></div>
+<div class="wrapper">
+  <div class="rec">
+    <div v-for="book in completedBooks" :key="book.id">
+        <div class="book">
+          <div class="rec-book"><img :src ="'/images/' + book.image"></div>
             <div class="description">
-            <h6>{{book.title}}</h6>
-            <p>This book was an absolute delight to read! I enjoyed the characters, the setting, the descirptions. The author is really amazing.</p>
-
-            <p>12/12/12</p>
+              <h6>{{ book.title }}</h6>
+              <p>By: {{ book.author }}</p>
+              <p>{{ book.description }}</p>
             </div>
-        </div>     -->
+        </div>
     </div>
-
+  </div>
+  <br>
+  <br>
 </div>
 
 </template>
@@ -22,20 +23,31 @@
 export default {
     name: 'BookList',
     props: {
-        completedBooks: Array,
+        books: Array,
+    },
+    computed: {
+      completedBooks() {
+        return this.$root.$data.completedBooks;
+      }
     }
 }
 </script>
 
 <style scoped>
+  .rec {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:   center;
+  }
   .rec-book {
-    /* height: 200px; */
     margin: 20px;
-    height: 400px;
+    height: 370px;
     border: 8px solid #7796cbff;
     justify-content: center;
   }
-
+  img {
+    width: 100%;
+  }
   .book {
     width: 300px;
     border: 8px solid #2d3047ff;;
@@ -48,10 +60,10 @@ export default {
     }
 
     .description {
-        border: 5px solid #E8DDB5;
-        background-color: #E8DDB5;
-        text-align: center;
-        margin: 8px;
+      border: 5px solid #E8DDB5;
+      background-color: #E8DDB5;
+      text-align: center;
+      margin: 8px;
 
     }
 
