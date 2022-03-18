@@ -1,11 +1,5 @@
 <template>
   <div id="app">
-    <!-- <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-     -->
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">Books!</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,7 +7,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active">
+          <li class="nav-item">
             <router-link to="/" class="nav-link">Home
             </router-link>
           </li>
@@ -33,7 +27,7 @@
 
     <div class="navbar navbar-light bg-light fixed-bottom">
       <div class="container-fluid">
-        <a class="navbar-brand" href="https://github.com/math919191/CreativeProject1">Source - Kelly Ko and R Daniels</a>
+        <a class="navbar-brand" href="https://github.com/math919191/CreativeProject3">Source - Kelly Ko and R Daniels</a>
       </div>
     </div>
     
