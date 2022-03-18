@@ -23,17 +23,14 @@
 <script>
 export default {
     name: 'CompletedBooks',
-    props: {
-        books: Array,
-    },
     computed: {
-      completedBooks() {
-        return this.$root.$data.completedBooks;
-      }
+        completedBooks() {
+            return this.$root.$data.completedBooks;
+        }
     },
     methods: {
-      removeBooks(book) {
-        this.$root.$data.completedBooks.splice(book.id, 1);
+      removeBook(book) {
+        this.$root.$data.completedBooks.splice(this.$root.$data.completedBooks.indexOf(book.id), 1);
       }
     }
 }
