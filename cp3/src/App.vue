@@ -18,10 +18,10 @@
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/completed" class="nav-link">Completed</router-link>
+            <router-link to="/list" class="nav-link">List</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/list" class="nav-link">List</router-link>
+            <router-link to="/completed" class="nav-link">Completed</router-link>
           </li>
 
           <li class="nav-item">
