@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Completed from '../views/Completed.vue'
+import List from '../views/List.vue'
+
 
 Vue.use(VueRouter)
 
@@ -23,6 +25,11 @@ const routes = [
     path: '/completed',
     name: 'completed',
     component: Completed
+  },
+  {
+    path: '/list',
+    name: 'list',
+    component: List
   }
 ]
 
