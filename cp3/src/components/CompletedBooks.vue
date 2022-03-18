@@ -67,10 +67,30 @@ export default {
       background-color: #E8DDB5;
       text-align: center;
       margin: 8px;
+      height: 250px;
 
     }
 
   h6, p{
     color: #2d3047ff;
   }
+
+
+button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color: #2d3047ff;
+}
+
+button:hover {background-color: #7796cbff}
+
+button:active {
+  background-color: #2286aa;
+  /* box-shadow: 0 5px #666; */
+  transform: translateY(4px);
+}
 </style>
