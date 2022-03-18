@@ -3,16 +3,16 @@
     <br>
     <h1>Completed Books</h1>
     <br>
-    <BookList />
+    <CompletedBooks />
   </div>
 </template>
 
 <script>
-import BookList from "../components/BookList.vue"
+import CompletedBooks from "../components/CompletedBooks.vue"
 export default {
     name: "Completed", 
     components: {
-        BookList
+        CompletedBooks
     },
 }
 

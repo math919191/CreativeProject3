@@ -2,14 +2,14 @@
 
 <div class="wrapper">
   <div class="rec">
-    <div v-for="book in bookList" :key="book.id">
+    <div v-for="book in completedBooks" :key="book.id">
         <div class="book">
           <div class="rec-book"><img :src ="'/images/' + book.image"></div>
             <div class="description">
               <h6>{{ book.title }}</h6>
               <p>By: {{ book.author }}</p>
               <p>{{ book.description }}</p>
-              <button class="auto" @click="addBook(book)">Completed!</button>
+              <button class="auto" @click="removeBook(book)">Remove</button>
             </div>
         </div>
     </div>
@@ -22,18 +22,18 @@
 
 <script>
 export default {
-    name: 'BookList',
+    name: 'CompletedBooks',
     props: {
         books: Array,
     },
     computed: {
-      bookList() {
-        return this.$root.$data.bookList;
+      completedBooks() {
+        return this.$root.$data.completedBooks;
       }
     },
     methods: {
-      addBook(book) {
-        this.$root.$data.completedBooks.push(book);
+      removeBooks(book) {
+        this.$root.$data.completedBooks.splice(book.id, 1);
       }
     }
 }

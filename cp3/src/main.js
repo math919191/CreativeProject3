@@ -6,7 +6,8 @@ import mock from './completedBooks.js'
 Vue.config.productionTip = false
 
 let data = {
-  completedBooks: mock,
+  bookList: mock,
+  completedBooks: [],
 }
 
 new Vue({
